@@ -1,0 +1,108 @@
+@import "mixins";
+body{
+    background-color: rgb(179, 180, 180);
+}
+.payment-container{
+@include flex-direction-column();
+background-color: #FFFFFF;
+margin: auto;
+@include widthheight(25%,450px);
+border-radius: 20px;
+// border: 2px solid black;
+.title-container{
+    border-radius: 20px;
+    @include flex-direction-column();
+    align-items: flex-start;
+    background-color: #FFFFFF;
+    @include widthheight(100%,30%);
+    padding: 20px;
+    .title{
+        // @include flex-direction-row();
+        // justify-content: flex-start;
+
+    }
+    .title-message{
+
+    }
+}
+.amount-container{
+    @include flex-direction-column();
+    background-color: #edebeb;
+    align-items: flex-start;
+
+    @include widthheight(100%,30%);
+    .amount{
+        .dollar{
+            font-weight: bold;
+        }
+        .dollar-details{
+            color:#6a5c5c ;
+
+        }
+    }
+    .grid-container{
+        margin: auto;
+        @include gridcontainer((auto auto),(auto auto));
+        column-gap: 10%;
+        row-gap: 5%
+    }
+    .know-more{
+
+    }
+}
+.card-details-container{
+    @include flex-direction-column();
+    align-items: flex-start;
+    // background-color: aqua;
+    @include widthheight(100%,50%);
+    .card-details-title{
+        @include widthheight(100%,20%);
+    }
+    .input-container{
+        @include flex-direction-row ();
+        @include widthheight(100%,30%);
+        input[type="text"]{
+            @include widthheight(100%,100%);
+            outline: none;
+        }
+    }
+    .date-month{
+            @include flex-direction-row ();
+            @include widthheight(100%,30%);
+        input[type="text"]{
+            @include widthheight(50%,100%);
+            outline: none;
+        }
+    }
+    .btn-container{
+        @include flex-direction-column();
+        @include widthheight(100%,30%);
+        margin: auto;
+        .success-btn{
+            cursor: pointer;
+            @include widthheight(100%,100%);
+            .success-btn-bg{
+                @include widthheight(100%,100%);
+                background-color: rgb(76, 76, 222);
+                border-color:  rgb(76, 76, 222);
+                color: #FFFFFF;
+                border: 2px solid  rgb(76, 76, 222);
+            }
+        }
+        .delete-btn{
+            cursor: pointer;
+            @include widthheight(40%,100%);
+            .delete-btn-bg{
+              
+                @include widthheight(100%,100%);
+                background-color: red;
+                border-color:  red;
+                color: #FFFFFF;
+                border: 2px solid  red;
+            }
+
+        }
+    }
+    
+}
+}

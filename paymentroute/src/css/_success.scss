@@ -1,0 +1,30 @@
+@import "mixins";
+
+.success-wrapper{
+@include flex-direction-column();
+@include widthheight(30%,300px);
+margin: auto;
+background-color:green;
+color: #FFFFFF;
+    .circle-tick-wrapper{
+        background-color: rgb(236, 236, 237);
+        @include widthheight(13%,15%);
+        border-radius: 50px;
+        .circle-tick{
+            @include flex-direction-row();
+            @include widthheight(100%,100%);
+        }
+
+    }
+    .sucess-wrapper-text{
+        @include widthheight(100%,30%);
+        @include flex-direction-row();
+        .success-text{
+            font-size: xx-large;
+        }
+    }
+    .response-wrapper{
+
+    }
+}
+

@@ -1,0 +1,237 @@
+body {
+  background-color: rgb(179, 180, 180);
+}
+
+.payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  margin: auto;
+  width: 25%;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+.payment-container .title-container {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.payment-container .amount-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #edebeb;
+  align-items: flex-start;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+.payment-container .amount-container .amount .dollar {
+  font-weight: bold;
+}
+.payment-container .amount-container .amount .dollar-details {
+  color: #6a5c5c;
+}
+.payment-container .amount-container .grid-container {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+  row-gap: 5%;
+}
+.payment-container .card-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 50%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .card-details-title {
+  width: 100%;
+  height: 20%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .input-container input[type=text] {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+.payment-container .card-details-container .date-month {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .date-month input[type=text] {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+.payment-container .card-details-container .btn-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.payment-container .card-details-container .btn-container .success-btn {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .btn-container .success-btn .success-btn-bg {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgb(76, 76, 222);
+  border-color: rgb(76, 76, 222);
+  color: #FFFFFF;
+  border: 2px solid rgb(76, 76, 222);
+}
+.payment-container .card-details-container .btn-container .delete-btn {
+  cursor: pointer;
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.payment-container .card-details-container .btn-container .delete-btn .delete-btn-bg {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: red;
+  border-color: red;
+  color: #FFFFFF;
+  border: 2px solid red;
+}
+
+.success-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 300px;
+  box-sizing: border-box;
+  margin: auto;
+  background-color: green;
+  color: #FFFFFF;
+}
+.success-wrapper .circle-tick-wrapper {
+  background-color: rgb(236, 236, 237);
+  width: 13%;
+  height: 15%;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.success-wrapper .circle-tick-wrapper .circle-tick {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.success-wrapper .sucess-wrapper-text {
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.success-wrapper .sucess-wrapper-text .success-text {
+  font-size: xx-large;
+}
+.invoice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 40%;
+  box-sizing: border-box;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+.invoice-container .invoice-title {
+  width: 100%;
+  height: 25%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+.invoice-container .invoice-title .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+}
+
+.delete-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 200px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  margin: auto;
+}
+.delete-container .delete-message {
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+}
+.delete-container .del-confirm {
+  width: 20%;
+  height: 50%;
+  box-sizing: border-box;
+}
+.delete-container .del-confirm button {
+  background-color: red;
+  border-color: red;
+  color: aliceblue;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.delete-container .prev .link {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

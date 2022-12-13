@@ -1,0 +1,16 @@
+@import "mixins";
+.invoice-container{
+   @include flex-direction-column();
+    @include widthheight(30%,40%);
+    margin: auto;
+    background-color:  #FFFFFF;;
+    .invoice-title{
+        @include widthheight(100%,25%);
+        @include flex-direction-row();
+        justify-content: space-around;
+        .title{
+            @include flex-direction-row();
+            justify-content: flex-start;
+        }
+    }
+}

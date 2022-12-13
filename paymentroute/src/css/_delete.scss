@@ -1,0 +1,28 @@
+@import "mixins";
+.delete-container{
+@include flex-direction-column();
+@include widthheight(30%,200px);
+background-color: #FFFFFF;
+border-radius: 50px;
+margin: auto;
+.delete-message{
+    @include widthheight(50%,50%);
+}
+.del-confirm{
+  
+    @include widthheight(20%,50%);
+    button{
+        background-color: red;
+        border-color: red;
+        color: aliceblue;
+        @include widthheight(100%,100%);
+    }
+}
+.prev{
+    .link{
+        text-decoration: none;
+    }
+
+}
+
+}
